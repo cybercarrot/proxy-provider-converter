@@ -20,6 +20,11 @@ module.exports = async (req, res) => {
         "User-Agent":
           "ClashX Pro/1.72.0.4 (com.west2online.ClashXPro; build:1.72.0.4; macOS 12.0.1) Alamofire/5.4.4",
       },
+      proxy: {
+        protocol: 'http',
+        host: '127.0.0.1',
+        port: 7890,
+      },
     });
     configFile = result.data;
   } catch (error) {
